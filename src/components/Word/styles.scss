@@ -1,0 +1,17 @@
+@use "../../assets/styles/" as *;
+
+.word {
+  &__linking {
+    background: $bg-green-color;
+    color: $secondary-color;
+  }
+  &__repeated {
+    color: $tertiary-color;
+    background-color: $bg-yellow-color;
+  }
+  &__error {
+    color: $red-color;
+    background-color: $bg-red-color;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,85 @@
+@use "../../../assets/styles/" as *;
+
+.score-modal {
+  max-width: 960px;
+  min-width: 90%;
+  &__paragraph {
+    padding: 12px 0;
+    &--head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &--tag-list {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &--tag {
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 8px;
+
+      &-green {
+        span {
+          letter-spacing: 0.3px;
+          color: $success-color;
+        }
+        background-color: $bg-green-color;
+      }
+
+      &-yellow {
+        span {
+          letter-spacing: 0.3px;
+          color: $tertiary-color;
+        }
+        background-color: $bg-yellow-color;
+      }
+
+      &-red {
+        span {
+          letter-spacing: 0.3px;
+          color: $red-color;
+        }
+        background-color: $bg-red-color;
+      }
+    }
+
+    &--score {
+      display: flex;
+      font-size: 18px;
+      align-items: center;
+      gap: 6px;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      span {
+        font-weight: 700;
+        color: $success-color;
+      }
+    }
+
+    &--content {
+      margin-top: 24px;
+    }
+  }
+}
+
+.ant-modal {
+  width: fit-content !important;
+  top: 50px !important;
+}
+
+.ant-table-thead > tr > th {
+  background: $primary-color;
+  color: #fff;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: $bg-blue-color;
+}

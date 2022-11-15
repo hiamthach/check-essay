@@ -1,0 +1,111 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: $primary-font-family;
+  vertical-align: baseline;
+  color: $text-color;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  font: normal normal 800 16px/22px;
+  color: #187498;
+  text-transform: uppercase;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.hero {
+  text-align: left;
+  font: normal normal 800 65px;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 1;
+}
+h1 {
+  font: normal normal 800 65px/1px;
+}
+
+h2 {
+  font: normal normal 800 45px/61px "Open Sans", sans-serif;
+}
+
+h3 {
+  font: normal normal 800 26px/36px "Open Sans", sans-serif;
+}
+
+h4 {
+  font: normal normal 800 22px/30px "Open Sans", sans-serif;
+}
+
+h5 {
+  font: normal normal 800 18px/24px "Open Sans", sans-serif;
+}
+
+h6 {
+  font: normal normal 800 16px/22px "Open Sans", sans-serif;
+}
+
+p {
+  font: normal normal normal 16px/22px "Open Sans", sans-serif;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  &.small {
+    font: normal normal normal 14px/19px "Open Sans", sans-serif;
+  }
+}

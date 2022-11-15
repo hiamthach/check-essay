@@ -1,0 +1,9 @@
+@use "../assets/styles/" as *;
+
+.main-layout {
+  &-container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 30px 0;
+  }
+}

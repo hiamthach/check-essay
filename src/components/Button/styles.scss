@@ -1,0 +1,69 @@
+@use "../../assets/styles/" as *;
+
+.cus-btn {
+  border-radius: 100px;
+  line-height: 22px;
+  padding: 16px 32px;
+  font: normal normal bold 16px/22px Open Sans;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  img {
+    width: 22px;
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    color: #fff;
+    &.outlined {
+      border: $primary-border;
+      color: $primary-color;
+      background: #fff;
+    }
+    &:hover {
+      background-color: #025f79;
+    }
+  }
+
+  &.secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    &.outlined {
+      border: $secondary-border;
+      color: $secondary-color;
+      background: #fff;
+    }
+  }
+
+  &.tertiary {
+    background-color: $tertiary-color;
+    color: $primary-color;
+    &.outlined {
+      border: $tertiary-border;
+      color: $tertiary-color;
+      background: #fff;
+    }
+    &:hover {
+      background-color: #007fa3;
+    }
+  }
+
+  &.grey {
+    background-color: $grey-color;
+    color: #fff;
+    &.outlined {
+      border: $grey-border;
+      color: $grey-color;
+      background: #fff;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}

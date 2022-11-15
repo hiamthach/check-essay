@@ -1,0 +1,48 @@
+@use "../../assets/styles/" as *;
+
+.score-info-tag {
+  padding: 16px 32px;
+  display: flex;
+  font-size: 16px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 100px;
+  width: 100%;
+
+  &__num {
+    height: 36px;
+    width: 36px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__green {
+    span {
+      letter-spacing: 0.3px;
+      color: $success-color;
+    }
+    background-color: $bg-green-color;
+  }
+
+  &__yellow {
+    span {
+      letter-spacing: 0.3px;
+      color: $tertiary-color;
+    }
+    background-color: $bg-yellow-color;
+  }
+
+  &__red {
+    span {
+      letter-spacing: 0.3px;
+      color: $red-color;
+    }
+    background-color: $bg-red-color;
+  }
+}

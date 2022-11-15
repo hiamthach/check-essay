@@ -1,0 +1,54 @@
+@use "../../assets/styles/" as *;
+
+.essay {
+  max-width: 1140px;
+  margin: auto;
+  padding: 30px 0;
+
+  &-timer {
+    text-align: right;
+    font-size: 20px;
+    font-family: $primary-font-family;
+    font-weight: 500;
+    margin-bottom: 12px;
+    span {
+      color: $red-color;
+    }
+  }
+
+  &-question {
+    .ant-input {
+      font-weight: bold;
+    }
+  }
+  &-respond {
+    margin: 12px 0 24px;
+  }
+
+  &-count {
+    text-align: right;
+  }
+
+  .ant-input {
+    border: $primary-border;
+    border-radius: 4px;
+    padding: 16px 32px;
+    font-family: $primary-font-family;
+    font-size: 15px;
+    line-height: 20px;
+    &::placeholder {
+      color: $grey-color;
+    }
+    &:focus {
+      box-shadow: 0 0 0 2px rgb(24 116 152 / 20%);
+    }
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+  &-btns {
+    display: flex;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,46 @@
+@use "../../assets/styles/" as *;
+
+.ant-popover-placement-bottom,
+.ant-popover-placement-bottomLeft,
+.ant-popover-placement-bottomRight {
+  padding-top: 0;
+}
+
+.ant-popover-content {
+  max-width: 360px;
+}
+
+.word-popover {
+  &__title {
+    color: $grey-color;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .ant-divider-horizontal {
+    margin: 6px 0;
+  }
+
+  &__replace {
+    &--list {
+      display: flex;
+      gap: 12px;
+      // margin-bottom: 12px;
+    }
+    &--word {
+      padding: 6px 10px;
+      border-radius: 10px;
+      color: $primary-color;
+      font-weight: 600;
+      &:hover {
+        cursor: pointer;
+        background-color: $bg-grey-color;
+      }
+    }
+  }
+  &__des {
+    font-size: 14px;
+    span {
+      font-weight: bold;
+    }
+  }
+}
